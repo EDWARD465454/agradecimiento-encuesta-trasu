@@ -11,7 +11,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Nunito',Arial,sans-serif;background:#fff;padding:0;margin:0}
 .wrapper{max-width:660px;margin:0 auto;width:100%}
-.banner-img{width:100%;display:block;border-radius:0}
+.banner-img{width:100%;max-width:100%;display:block;border-radius:0;object-fit:cover;object-position:center;margin-top:18px}
 .content{padding:44px 48px 56px;text-align:center}
 .check-wrap{width:76px;height:76px;margin:0 auto 26px;border-radius:50%;background:#e6f4ff;display:flex;align-items:center;justify-content:center;animation:pop .32s cubic-bezier(.34,1.56,.64,1) .15s both}
 @keyframes pop{from{opacity:0;transform:scale(.65)}to{opacity:1;transform:scale(1)}}
@@ -27,7 +27,7 @@ h1 span{color:#00AEEF}
 .message{color:#555;font-size:16px;line-height:1.75;max-width:480px;margin:0 auto 30px}
 .divider{border:none;border-top:1.5px solid #e0ecf7;width:60px;margin:0 auto 18px}
 .footer{color:#aaa;font-size:12.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
-@media(max-width:680px){.wrapper{max-width:100%}.content{padding:32px 24px 44px}h1{font-size:22px}.message{font-size:15px}}
+@media(max-width:680px){.wrapper{max-width:100%}.banner-img{max-height:160px;margin-top:12px}.content{padding:32px 24px 44px}h1{font-size:22px}.message{font-size:15px}}
 </style>
 </head>
 <body>
@@ -43,12 +43,8 @@ h1 span{color:#00AEEF}
         <path class="checkmark__check" d="M14 27l8 8 16-16"/>
       </svg>
     </div>
-    <h1 class="fade d1">¡Gracias por enviar<br><span>tus respuestas!</span></h1>
-    <p class="message fade d2">
-      Tus respuestas han sido registradas exitosamente.<br>
-      Valoramos tu tiempo y opinión para seguir mejorando<br>
-      los servicios brindados por el TRASU.
-    </p>
+    <h1 class="fade d1">¡Gracias por <span>responder!</span></h1>
+
     <hr class="divider fade d3">
     <p class="footer fade d3">TRASU &mdash; OSIPTEL</p>
   </div>
